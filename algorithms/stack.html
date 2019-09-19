@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>stack</title>
+  <meta name="description" content="stack">
+  <meta name="author" content="FrancisMaile">
+
+  <link rel="stylesheet" href="">
+
+</head>
+
+<body>
+<h1>Testing implementation of stack data structure in JavaScript</h1>
+<p>Open the console!</p>
+<script src="stack.js" type="text/javascript">
+
+</script>
+<script type="text/javascript">
+
+function baseCon(num, base) {
+	let s = new Stack();
+	let digit;
+	do {
+		digit = num % base;
+		s.push(digit);
+		num= Math.floor( num / base );
+	} while ( num > 0 );
+	let converted = "";
+	while (s.length() > 0) {
+		converted += s.pop();
+	}
+	return converted;
+}
+
+console.log("32 in base 2 is %s", baseCon(32,2));
+console.log("125 in base 8 is %s", baseCon(125,8));
+
+</script>
+</body>
+</html>
