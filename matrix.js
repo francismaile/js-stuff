@@ -37,5 +37,11 @@ function printSpiral( arr ) {
   } // end while
   return result.join(' ');
 } // end printSpiral
+<<<<<<< HEAD
+=======
+
+console.log( printSpiral(matrix) );
+
+>>>>>>> a93b8bd24ce9f54bb8e20747c9da6214d641fff5
 
 console.log( printSpiral(matrix) );
